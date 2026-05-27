@@ -1,0 +1,1 @@
+This app collects user data such as Instagram media for posting purposes. It does not share, sell, or misuse personal data.

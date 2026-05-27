@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+.env/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Generated images (large files)
+*.eps
+*.mp4
+
+# Caches
+.ruff_cache/
+.pytest_cache/
+
+# Build
+*.egg-info/
+
+# OS
+Thumbs.db

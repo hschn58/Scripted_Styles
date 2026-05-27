@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "scripted-styles"
+version = "1.0.0"
+description = "Algorithmic art and generative design in Python"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+    "scipy>=1.10",
+    "opencv-python>=4.7",
+    "Pillow>=9.5",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+automation = [
+    "requests>=2.28",
+    "openai>=1.0",
+]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.4",
+]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["F"]
+ignore = ["F401", "F403", "F541", "F811", "F821", "F841"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

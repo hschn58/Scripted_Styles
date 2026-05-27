@@ -1,0 +1,23 @@
+
+
+
+Get API id stuff:
+
+curl -X GET "https://api.printify.com/v1/shops.json" \
+-H "Authorization: Bearer YOUR_API_TOKEN"
+
+curl -X GET "https://api.printify.com/v1/shops/{shop_id}/products.json" \
+-H "Authorization: Bearer YOUR_API_TOKEN"
+
+curl -X GET "https://api.printify.com/v1/shops/{shop_id}/products/{product_id}.json" \
+-H "Authorization: Bearer YOUR_API_TOKEN"
+
+
+Facebook get long-term token:
+
+
+curl -G "https://graph.facebook.com/v22.0/oauth/access_token" \
+    --data-urlencode "grant_type=fb_exchange_token" \
+    --data-urlencode "client_id=YOUR_APP_ID" \
+    --data-urlencode "client_secret=YOUR_APP_SECRET" \
+    --data-urlencode "fb_exchange_token=YOUR_SHORT_LIVED_ACCESS_TOKEN"
